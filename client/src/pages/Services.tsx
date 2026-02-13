@@ -13,11 +13,11 @@ export default function Services() {
   const services = [
     {
       title: "Roof & Exterior Inspections",
-      description: "Comprehensive aerial and ground inspections using thermal imaging to detect hidden issues.",
+      description: "Comprehensive aerial and ground inspections to identify roof, gutter, siding, and structural issues.",
       features: [
-        "Aerial thermal imaging for moisture detection",
+        "Comprehensive roof condition assessment",
         "Hail damage assessment",
-        "Structural concern identification",
+        "Gutter and downspout inspection",
         "Claims-ready documentation",
         "Detailed written report",
         "Same-day delivery available"
@@ -64,8 +64,7 @@ export default function Services() {
     {
       step: 2,
       title: "Inspection",
-      description: "Professional assessment using latest drone and imaging technology"
-    },
+      description:      "Professional assessment using latest drone technology and visual inspection methods"},
     {
       step: 3,
       title: "Analysis",
@@ -190,6 +189,15 @@ export default function Services() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Thermal Imaging Note */}
+      <section className="bg-blue-50 border-l-4 border-blue-600 py-12">
+        <div className="container">
+          <p className="text-center text-gray-700 text-lg">
+            <span className="font-semibold text-blue-600">Thermal Imaging Available Upon Request:</span> For commercial properties and specialized inspections, thermal imaging services are available. <button onClick={() => setLocation('/contact')} className="text-blue-600 hover:text-blue-800 font-semibold underline">Send an inquiry</button> to discuss your specific needs.
+          </p>
         </div>
       </section>
 

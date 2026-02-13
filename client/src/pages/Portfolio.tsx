@@ -16,11 +16,7 @@ export default function Portfolio() {
       category: "Drone Photography",
       description: "4K aerial photography and video for premium residential property in Columbus"
     },
-    {
-      title: "Commercial Property Inspection",
-      category: "Thermal Imaging",
-      description: "Comprehensive thermal imaging inspection revealing hidden moisture issues"
-    },
+
     {
       title: "Insurance Claim Documentation",
       category: "Documentation",
@@ -32,9 +28,9 @@ export default function Portfolio() {
       description: "Complete 360° virtual tour with professional photography"
     },
     {
-      title: "Roof Damage Assessment",
-      category: "Thermal Imaging",
-      description: "Hail damage assessment using advanced thermal imaging technology"
+      title: "Roof Inspection Report",
+      category: "Inspections",
+      description: "Comprehensive roof and exterior inspection with detailed documentation"
     },
     {
       title: "Listing Media Package",
@@ -175,9 +171,9 @@ export default function Portfolio() {
               <p className="text-gray-700">Cinematic drone footage and edited videos that tell your property's story</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-4">🔍</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Thermal Imaging</h3>
-              <p className="text-gray-700">Advanced thermal imaging to detect moisture, damage, and structural issues</p>
+              <div className="text-5xl mb-4">📋</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Property Inspections</h3>
+              <p className="text-gray-700">Comprehensive inspections with detailed reports and professional documentation</p>
             </div>
           </div>
         </div>

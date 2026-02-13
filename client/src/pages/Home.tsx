@@ -13,8 +13,8 @@ export default function Home() {
   const services = [
     {
       title: "Roof & Exterior Inspections",
-      description: "See what others miss. Aerial thermal imaging detects hidden moisture, hail damage, and structural concerns.",
-      features: ["Comprehensive assessment", "Thermal imaging included", "Claims-ready documentation"],
+      description: "Comprehensive aerial and ground inspections to identify roof, gutter, siding, and structural issues.",
+      features: ["Comprehensive assessment", "Professional documentation", "Claims-ready reports"],
       icon: "🏠"
     },
     {
