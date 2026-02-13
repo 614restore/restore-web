@@ -117,9 +117,39 @@ export default function About() {
         </div>
       </section>
 
-      {/* Promotional Image Section */}
-      <section className="relative bg-white py-0">
-        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" alt="614 Restore - Professional Services" className="w-full h-auto" />
+      {/* Promotional Image Section with Overlay */}
+      <section className="relative bg-white overflow-hidden py-20">
+        <div className="relative min-h-96 flex items-center">
+          {/* Background Image with Transparency */}
+          <img 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" 
+            alt="614 Restore - Professional Services" 
+            className="absolute inset-0 w-full h-full object-cover opacity-25" 
+          />
+          
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-slate-900/60"></div>
+          
+          {/* Text Content */}
+          <div className="container relative z-10 text-white">
+            <div className="max-w-3xl">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Comprehensive Property Solutions
+              </h2>
+              <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+                With 15+ years of insurance adjuster experience and FAA drone certification, I provide the professional documentation and media your property deserves.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button onClick={() => setLocation('/contact')} className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-4">
+                  Get in Touch
+                </Button>
+                <Button onClick={() => setLocation('/services')} variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-4">
+                  View Services
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Credentials */}

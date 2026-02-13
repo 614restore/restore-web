@@ -68,9 +68,53 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section with Marketing Image */}
-      <section className="relative bg-white">
-        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" alt="614 Restore - Elevate Your Listing, Protect Your Investment" className="w-full h-auto" />
+      {/* Hero Section with Marketing Image and Text Overlay */}
+      <section className="relative bg-white overflow-hidden">
+        <div className="relative min-h-screen flex items-center">
+          {/* Background Image with Transparency */}
+          <img 
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" 
+            alt="614 Restore - Elevate Your Listing, Protect Your Investment" 
+            className="absolute inset-0 w-full h-full object-cover opacity-30" 
+          />
+          
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-slate-900/60"></div>
+          
+          {/* Text Content */}
+          <div className="container relative z-10 text-white py-20">
+            <div className="max-w-3xl">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Elevate Your Listing, Protect Your Investment
+              </h1>
+              <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+                Expert property inspections & professional media solutions by Jeff Newell. Former insurance adjuster providing comprehensive inspections in Columbus, Ohio.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Button onClick={() => setLocation('/contact')} className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6">
+                  Schedule Inspection
+                </Button>
+                <Button onClick={() => setLocation('/portfolio')} variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-6">
+                  View Portfolio
+                </Button>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-6">
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400" />
+                  <span>Former Insurance Adjuster</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400" />
+                  <span>FAA-Certified Drone Pilot</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400" />
+                  <span>Ohio Licensed Inspector</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Why 88 Seconds Section */}
