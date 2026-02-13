@@ -125,8 +125,11 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             The average buyer decides in 88 seconds.
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Our inspections and media ensure your property makes every second count.
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+            In that crucial 88-second "first impression" phase, you're not selling with facts—you're validating feelings and removing friction.
+          </p>
+          <p className="text-base text-gray-600 max-w-2xl mx-auto">
+            Our professional inspections and media create immediate confidence, answer unspoken questions, and make every second count toward closing the deal.
           </p>
         </div>
       </section>
