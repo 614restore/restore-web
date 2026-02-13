@@ -40,15 +40,15 @@ export default function Services() {
       price: "Starting at $499"
     },
     {
-      title: "Insurance Documentation",
-      description: "Expert insurance claim documentation with adjuster-approved formatting.",
+      title: "Property Evaluation Report",
+      description: "Comprehensive property assessment with professional documentation suitable for real estate agents, buyers, and stakeholders.",
       features: [
-        "Professional damage assessment",
-        "Adjuster-approved format",
+        "Complete property analysis",
+        "Professional written report",
+        "High-resolution documentation photos",
+        "Expert findings and recommendations",
         "Digital & print formats",
-        "Expert analysis and notes",
-        "Claims support consultation",
-        "Multiple property support"
+        "Ready for distribution to all parties"
       ],
       icon: "📋",
       price: "Starting at $399"
@@ -88,6 +88,7 @@ export default function Services() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => setLocation('/services')} className="text-sm font-medium text-red-600">Services</button>
+            <button onClick={() => setLocation('/service-packages')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Packages</button>
             <button onClick={() => setLocation('/portfolio')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Portfolio</button>
             <button onClick={() => setLocation('/about')} className="text-sm font-medium text-gray-700 hover:text-gray-900">About</button>
             <button onClick={() => setLocation('/contact')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Contact</button>

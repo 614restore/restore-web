@@ -53,6 +53,7 @@ export default function Portfolio() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => setLocation('/services')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Services</button>
+            <button onClick={() => setLocation('/service-packages')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Packages</button>
             <button onClick={() => setLocation('/portfolio')} className="text-sm font-medium text-red-600">Portfolio</button>
             <button onClick={() => setLocation('/about')} className="text-sm font-medium text-gray-700 hover:text-gray-900">About</button>
             <button onClick={() => setLocation('/contact')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Contact</button>
