@@ -68,47 +68,9 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 md:py-32">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-72 h-72 bg-red-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
-        </div>
-        <div className="container relative z-10">
-          <div className="max-w-3xl">
-            <div className="mb-6 inline-block">
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663237003970/Yjm6VPLEd0vLGwKQ.jpg" alt="88 Seconds" className="h-20 w-auto" />
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Elevate Your Listing, Protect Your Investment
-            </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl">
-              Expert property inspections & professional media solutions by Jeff Newell. Former insurance adjuster providing comprehensive inspections in Columbus, Ohio.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={() => setLocation('/contact')} className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6">
-                Schedule Inspection
-              </Button>
-              <Button onClick={() => setLocation('/portfolio')} variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-6">
-                View Portfolio
-              </Button>
-            </div>
-            <div className="mt-12 flex flex-col sm:flex-row gap-6">
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400" />
-                <span>Former Insurance Adjuster</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400" />
-                <span>FAA-Certified Drone Pilot</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <CheckCircle className="w-6 h-6 text-green-400" />
-                <span>Ohio Licensed Inspector</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Hero Section with Marketing Image */}
+      <section className="relative bg-white">
+        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" alt="614 Restore - Elevate Your Listing, Protect Your Investment" className="w-full h-auto" />
       </section>
 
       {/* Why 88 Seconds Section */}

@@ -117,6 +117,11 @@ export default function About() {
         </div>
       </section>
 
+      {/* Promotional Image Section */}
+      <section className="relative bg-white py-0">
+        <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/isPCJDOObBYdYsML.JPG" alt="614 Restore - Professional Services" className="w-full h-auto" />
+      </section>
+
       {/* Credentials */}
       <section className="bg-gray-50 py-20">
         <div className="container">
