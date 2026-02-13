@@ -161,8 +161,9 @@ export default function Contact() {
                       <option value="">Select a service</option>
                       <option value="roof-inspection">Roof & Exterior Inspection</option>
                       <option value="drone-media">Professional Listing Media</option>
-                      <option value="insurance-doc">Insurance Documentation</option>
+                      <option value="comprehensive-inspection">Comprehensive Inspection (Full written and photo report)</option>
                       <option value="all-services">All Services</option>
+                      <option value="other">Other</option>
                     </select>
                   </div>
 
