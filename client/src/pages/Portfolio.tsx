@@ -101,6 +101,39 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Featured Drone Photo Showcase */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-white mb-4">Drone Photography Showcase</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Experience the power of aerial perspectives. Our drone photography reveals property details that ground-level photography simply cannot capture.
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-2xl">
+            <img 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663159852010/RwKrTJRauxcdVpzD.JPG" 
+              alt="Aerial drone photography of residential property" 
+              className="w-full h-auto object-cover" 
+            />
+          </div>
+          <div className="mt-12 grid md:grid-cols-3 gap-8 text-white">
+            <div>
+              <div className="text-3xl font-bold text-red-400 mb-2">360°</div>
+              <p className="text-gray-300">Complete property coverage from every angle</p>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-red-400 mb-2">4K</div>
+              <p className="text-gray-300">Ultra-high resolution aerial photography</p>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-red-400 mb-2">FAA</div>
+              <p className="text-gray-300">Licensed drone pilot with Part 107 certification</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="bg-gray-50 py-20">
         <div className="container">
