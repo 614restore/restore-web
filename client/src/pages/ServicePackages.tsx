@@ -175,124 +175,64 @@ export default function ServicePackages() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Feature Comparison</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Roof & Exterior */}
-            <Card className="overflow-hidden">
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Roof & Exterior</h3>
-                <p className="text-red-600 font-bold text-2xl mb-8">$299</p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Written Inspection Report</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Drone Photography</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-gray-400 flex-shrink-0">—</span>
-                    <span className="text-sm text-gray-500">Professional Video</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">High-Resolution Photos</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Full Rights to Media</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Exterior Inspection Documentation</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-gray-400 flex-shrink-0">—</span>
-                    <span className="text-sm text-gray-500">Interior Inspection Documentation</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Professional Media */}
-            <Card className="overflow-hidden ring-2 ring-red-600 md:scale-105">
-              <div className="bg-red-600 text-white py-2 text-center font-semibold">Most Popular</div>
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional Media</h3>
-                <p className="text-red-600 font-bold text-2xl mb-8">$399</p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-gray-400 flex-shrink-0">—</span>
-                    <span className="text-sm text-gray-500">Written Inspection Report</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Drone Photography</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Professional Video</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">High-Resolution Photos</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Full Rights to Media</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-gray-400 flex-shrink-0">—</span>
-                    <span className="text-sm text-gray-500">Exterior Inspection Documentation</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="w-5 h-5 text-gray-400 flex-shrink-0">—</span>
-                    <span className="text-sm text-gray-500">Interior Inspection Documentation</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Property Evaluation */}
-            <Card className="overflow-hidden">
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Property Evaluation</h3>
-                <p className="text-red-600 font-bold text-2xl mb-8">$499</p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Written Inspection Report</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Drone Photography</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Professional Video</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">High-Resolution Photos</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Full Rights to Media</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Exterior Inspection Documentation</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-sm text-gray-700">Interior Inspection Documentation</span>
-                  </div>
-                </div>
-              </div>
-            </Card>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-lg overflow-hidden">
+              <thead>
+                <tr className="bg-gray-100 border-b-2 border-gray-300">
+                  <th className="text-left py-4 px-6 font-semibold text-gray-900">Feature</th>
+                  <th className="text-center py-4 px-6 font-semibold text-gray-900">Roof & Exterior<br /><span className="text-red-600 font-bold text-lg">$299</span></th>
+                  <th className="text-center py-4 px-6 font-semibold text-gray-900 bg-red-50">Professional Media<br /><span className="text-red-600 font-bold text-lg">$399</span></th>
+                  <th className="text-center py-4 px-6 font-semibold text-gray-900">Property Evaluation<br /><span className="text-red-600 font-bold text-lg">$499</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Written Inspection Report</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6 bg-red-50">—</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Drone Photography</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Professional Video</td>
+                  <td className="text-center py-4 px-6">—</td>
+                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">High-Resolution Photos</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Full Rights to Media</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200 hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Exterior Inspection Documentation</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-6 bg-red-50">—</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="py-4 px-6 text-gray-900">Interior Inspection Documentation</td>
+                  <td className="text-center py-4 px-6">—</td>
+                  <td className="text-center py-4 px-6 bg-red-50">—</td>
+                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
