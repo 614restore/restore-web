@@ -21,12 +21,14 @@ export default function ServicePackages() {
         "Gutter and downspout inspection",
         "Siding and exterior materials review",
         "Foundation and grading evaluation",
-        "Detailed written report",
+        "Exterior inspection documentation",
+        "Drone photography included",
+        "Full rights to media",
         "High-resolution photos included",
         "Email delivery within 24 hours"
       ],
       notIncluded: [
-        "Drone photography",
+        "Interior inspection",
         "Thermal imaging",
         "Video walkthrough"
       ],
@@ -34,7 +36,7 @@ export default function ServicePackages() {
     },
     {
       name: "Professional Listing Media",
-      price: "$599",
+      price: "$399",
       description: "Premium drone photography and videography for real estate listings",
       popular: true,
       features: [
@@ -56,12 +58,14 @@ export default function ServicePackages() {
     },
     {
       name: "Property Evaluation Report",
-      price: "$749",
+      price: "$499",
       description: "For agents and homeowners: Complete professional evaluation showing full transparency. Buyers get confidence knowing nothing is hidden.",
       popular: false,
       features: [
         "Complete property analysis and evaluation",
         "Detailed professional written report",
+        "Exterior inspection documentation",
+        "Interior inspection documentation",
         "100+ high-resolution documentation photos",
         "Photo evidence of all findings",
         "Drone aerial photography included",
@@ -70,10 +74,7 @@ export default function ServicePackages() {
         "Email delivery within 24 hours",
         "Full rights to all photos and videos"
       ],
-      notIncluded: [
-        "Thermal imaging",
-        "Extended warranty"
-      ],
+      notIncluded: [],
       cta: "Request Evaluation"
     }
   ];
@@ -196,7 +197,7 @@ export default function ServicePackages() {
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="py-4 px-4 text-gray-900">Drone Photography</td>
-                  <td className="text-center py-4 px-4">—</td>
+                  <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                   <td className="text-center py-4 px-4 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                   <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                 </tr>
@@ -214,12 +215,18 @@ export default function ServicePackages() {
                 </tr>
                 <tr className="border-b border-gray-200">
                   <td className="py-4 px-4 text-gray-900">Full Rights to Media</td>
-                  <td className="text-center py-4 px-4">—</td>
+                  <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                   <td className="text-center py-4 px-4 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                   <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
                 </tr>
                 <tr className="border-b border-gray-200">
-                  <td className="py-4 px-4 text-gray-900">Claims-Ready Documentation</td>
+                  <td className="py-4 px-4 text-gray-900">Exterior Inspection Documentation</td>
+                  <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                  <td className="text-center py-4 px-4 bg-red-50">—</td>
+                  <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                </tr>
+                <tr className="border-b border-gray-200">
+                  <td className="py-4 px-4 text-gray-900">Interior Inspection Documentation</td>
                   <td className="text-center py-4 px-4">—</td>
                   <td className="text-center py-4 px-4 bg-red-50">—</td>
                   <td className="text-center py-4 px-4"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
@@ -227,8 +234,8 @@ export default function ServicePackages() {
                 <tr>
                   <td className="py-4 px-4 text-gray-900 font-semibold">Price</td>
                   <td className="text-center py-4 px-4 font-bold text-red-600">$299</td>
-                  <td className="text-center py-4 px-4 font-bold text-red-600 bg-red-50">$599</td>
-                  <td className="text-center py-4 px-4 font-bold text-red-600">$749</td>
+                  <td className="text-center py-4 px-4 font-bold text-red-600 bg-red-50">$399</td>
+                  <td className="text-center py-4 px-4 font-bold text-red-600">$499</td>
                 </tr>
               </tbody>
             </table>
