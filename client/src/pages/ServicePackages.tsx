@@ -1,7 +1,12 @@
-<>
-  <h1>Service Packages</h1>
+const ServicePackages = () => {
+    return (
+        <div>
+            <h1>Service Packages</h1>
+            <p>
+                Welcome to our Service Packages page! Here you will find detailed information about our various service packages designed to meet your needs.
+            </p>
+        </div>
+    );
+};
 
-  <p>
-    Welcome to our Service Packages page! Here you will find detailed information about our various service packages designed to meet your needs.
-  </p>
-</>
+export default ServicePackages;
