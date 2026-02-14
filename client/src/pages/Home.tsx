@@ -92,14 +92,35 @@ export default function Home() {
           </button>
         </div>
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
-            <div className="container py-4 flex flex-col gap-3">
-              <button onClick={() => handleNavigate('/services')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Services</button>
-              <button onClick={() => handleNavigate('/service-packages')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Packages</button>
-              <button onClick={() => handleNavigate('/portfolio')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Portfolio</button>
-              <button onClick={() => handleNavigate('/about')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">About</button>
-              <button onClick={() => handleNavigate('/contact')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Contact</button>
-              <Button onClick={() => handleNavigate('/contact')} className="bg-red-600 hover:bg-red-700 w-full">Get Started</Button>
+          <div className="md:hidden fixed inset-0 z-50">
+            <button
+              className="absolute inset-0 bg-black/50"
+              aria-label="Close menu"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            <div className="absolute inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl flex flex-col">
+              <div className="flex items-center justify-between px-6 py-5 border-b border-gray-200">
+                <span className="text-sm font-semibold text-gray-900">Menu</span>
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="inline-flex items-center justify-center rounded-md border border-gray-200 p-2 text-gray-700 hover:bg-gray-50"
+                  aria-label="Close menu"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+              <div className="flex-1 px-6 py-6 flex flex-col gap-5">
+                <button onClick={() => handleNavigate('/services')} className="text-left text-base font-semibold text-gray-900">Services</button>
+                <button onClick={() => handleNavigate('/service-packages')} className="text-left text-base font-semibold text-gray-900">Packages</button>
+                <button onClick={() => handleNavigate('/portfolio')} className="text-left text-base font-semibold text-gray-900">Portfolio</button>
+                <button onClick={() => handleNavigate('/about')} className="text-left text-base font-semibold text-gray-900">About</button>
+                <button onClick={() => handleNavigate('/contact')} className="text-left text-base font-semibold text-gray-900">Contact</button>
+              </div>
+              <div className="px-6 pb-8">
+                <Button onClick={() => handleNavigate('/contact')} className="bg-red-600 hover:bg-red-700 w-full text-lg py-6">
+                  Get Started
+                </Button>
+              </div>
             </div>
           </div>
         )}
