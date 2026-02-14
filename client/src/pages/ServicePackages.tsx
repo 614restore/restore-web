@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Check } from "lucide-react";
+import { ArrowLeft, Check, X } from "lucide-react";
 import { useLocation } from "wouter";
 
 /**
@@ -175,61 +175,61 @@ export default function ServicePackages() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Feature Comparison</h2>
           <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-lg overflow-hidden">
+            <table className="w-full border-collapse">
               <thead>
-                <tr className="bg-gray-100 border-b-2 border-gray-300">
-                  <th className="text-left py-4 px-6 font-semibold text-gray-900">Feature</th>
-                  <th className="text-center py-4 px-6 font-semibold text-gray-900">Roof & Exterior<br /><span className="text-red-600 font-bold text-lg">$299</span></th>
-                  <th className="text-center py-4 px-6 font-semibold text-gray-900 bg-red-50">Professional Media<br /><span className="text-red-600 font-bold text-lg">$399</span></th>
-                  <th className="text-center py-4 px-6 font-semibold text-gray-900">Property Evaluation<br /><span className="text-red-600 font-bold text-lg">$499</span></th>
+                <tr>
+                  <th className="bg-gray-700 text-white py-6 px-8 text-left font-bold text-lg border border-gray-700">Feature</th>
+                  <th className="bg-gray-700 text-white py-6 px-8 text-center font-bold text-lg border border-gray-700">Roof & Exterior<br /><span className="text-red-400 font-bold text-base">$299</span></th>
+                  <th className="bg-gray-700 text-white py-6 px-8 text-center font-bold text-lg border border-gray-700">Professional Media<br /><span className="text-red-400 font-bold text-base">$399</span></th>
+                  <th className="bg-gray-700 text-white py-6 px-8 text-center font-bold text-lg border border-gray-700">Property Evaluation<br /><span className="text-red-400 font-bold text-base">$499</span></th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Written Inspection Report</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6 bg-red-50">—</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Written Inspection Report</td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><X className="w-6 h-6 text-red-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Drone Photography</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Drone Photography</td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Professional Video</td>
-                  <td className="text-center py-4 px-6">—</td>
-                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Professional Video</td>
+                  <td className="text-center py-5 px-8 bg-white"><X className="w-6 h-6 text-red-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">High-Resolution Photos</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">High-Resolution Photos</td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Full Rights to Media</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6 bg-red-50"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Full Rights to Media</td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Exterior Inspection Documentation</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
-                  <td className="text-center py-4 px-6 bg-red-50">—</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Exterior Inspection Documentation</td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><X className="w-6 h-6 text-red-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
-                <tr className="hover:bg-gray-50">
-                  <td className="py-4 px-6 text-gray-900">Interior Inspection Documentation</td>
-                  <td className="text-center py-4 px-6">—</td>
-                  <td className="text-center py-4 px-6 bg-red-50">—</td>
-                  <td className="text-center py-4 px-6"><Check className="w-5 h-5 text-green-600 mx-auto" /></td>
+                <tr className="border border-gray-300">
+                  <td className="py-5 px-8 text-gray-900 font-medium bg-gray-50">Interior Inspection Documentation</td>
+                  <td className="text-center py-5 px-8 bg-white"><X className="w-6 h-6 text-red-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><X className="w-6 h-6 text-red-500 mx-auto" /></td>
+                  <td className="text-center py-5 px-8 bg-white"><Check className="w-6 h-6 text-green-500 mx-auto" /></td>
                 </tr>
               </tbody>
             </table>
