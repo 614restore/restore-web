@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Phone, Mail, MapPin, CheckCircle } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Menu, X } from "lucide-react";
+import { useState } from "react";
 import { useLocation } from "wouter";
 
 /**
@@ -9,6 +10,7 @@ import { useLocation } from "wouter";
  */
 export default function Home() {
   const [, setLocation] = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollToContact = () => {
     setLocation('/contact');
@@ -60,6 +62,11 @@ export default function Home() {
     }
   ];
 
+  const handleNavigate = (path: string) => {
+    setLocation(path);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -76,7 +83,26 @@ export default function Home() {
             <button onClick={() => setLocation('/contact')} className="text-sm font-medium text-gray-700 hover:text-gray-900">Contact</button>
             <Button onClick={() => setLocation('/contact')} className="bg-red-600 hover:bg-red-700">Get Started</Button>
           </div>
+          <button
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            className="md:hidden inline-flex items-center justify-center rounded-md border border-gray-200 p-2 text-gray-700 hover:bg-gray-50"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 bg-white">
+            <div className="container py-4 flex flex-col gap-3">
+              <button onClick={() => handleNavigate('/services')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Services</button>
+              <button onClick={() => handleNavigate('/service-packages')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Packages</button>
+              <button onClick={() => handleNavigate('/portfolio')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Portfolio</button>
+              <button onClick={() => handleNavigate('/about')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">About</button>
+              <button onClick={() => handleNavigate('/contact')} className="text-left text-sm font-medium text-gray-700 hover:text-gray-900">Contact</button>
+              <Button onClick={() => handleNavigate('/contact')} className="bg-red-600 hover:bg-red-700 w-full">Get Started</Button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section with Marketing Image and Text Overlay */}
