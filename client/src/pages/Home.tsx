@@ -10,6 +10,16 @@ import { useLocation } from "wouter";
 export default function Home() {
   const [, setLocation] = useLocation();
 
+  const scrollToContact = () => {
+    setLocation('/contact');
+    setTimeout(() => {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   const services = [
     {
       title: "Roof & Exterior Inspections",
@@ -26,7 +36,7 @@ export default function Home() {
     },
     {
       title: "Property Evaluation Report",
-      description: "Comprehensive property assessment with professional documentation for agents, buyers, and stakeholders.",
+      description: "Whether you're a real estate agent listing properties or a homeowner selling independently, provide buyers with a complete professional report showing full transparency and nothing to hide.",
       features: ["Detailed property analysis", "Professional documentation", "Ready for distribution"],
       icon: "📋"
     }
@@ -92,7 +102,7 @@ export default function Home() {
                 Expert property inspections & professional media solutions by Jeff Newell. Former insurance adjuster providing comprehensive inspections in Columbus, Ohio.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button onClick={() => setLocation('/contact')} className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6">
+                <Button onClick={scrollToContact} className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6">
                   Schedule Inspection
                 </Button>
                 <Button onClick={() => setLocation('/portfolio')} variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-6">

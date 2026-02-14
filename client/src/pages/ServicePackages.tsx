@@ -57,7 +57,7 @@ export default function ServicePackages() {
     {
       name: "Property Evaluation Report",
       price: "$749",
-      description: "Comprehensive property assessment with professional documentation for agents, buyers, and stakeholders",
+      description: "For agents and homeowners: Complete professional evaluation showing full transparency. Buyers get confidence knowing nothing is hidden.",
       popular: false,
       features: [
         "Complete property analysis and evaluation",

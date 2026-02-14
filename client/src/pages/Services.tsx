@@ -41,7 +41,7 @@ export default function Services() {
     },
     {
       title: "Property Evaluation Report",
-      description: "Comprehensive property assessment with professional documentation suitable for real estate agents, buyers, and stakeholders.",
+      description: "Perfect for real estate agents listing properties or homeowners selling independently. Provide buyers with a complete professional evaluation that demonstrates full transparency and builds confidence in your property.",
       features: [
         "Complete property analysis",
         "Professional written report",

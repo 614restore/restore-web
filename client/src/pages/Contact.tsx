@@ -97,7 +97,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto" id="contact-form">
             <Card className="p-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Send us a Message</h2>
               
@@ -196,10 +196,13 @@ export default function Contact() {
       {/* Response Time Section */}
       <section className="bg-gray-50 py-16">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Quick Response Time</h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            We typically respond to inquiries within 2 hours during business hours. For urgent matters, please call directly.
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Prefer to Email Directly?</h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+            You can also reach us directly by email. We typically respond to inquiries within 2 hours during business hours.
           </p>
+          <a href="mailto:jeffrey@614restore.com" className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg text-lg">
+            Send Email to jeffrey@614restore.com
+          </a>
         </div>
       </section>
 

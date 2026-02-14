@@ -263,6 +263,30 @@ export default function About() {
         </div>
       </section>
 
+      {/* Additional Services */}
+      <section className="bg-gray-50 py-20">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Beyond Property Inspections</h2>
+            <p className="text-lg text-gray-700 mb-8">
+              In addition to property inspections and drone media, I also offer web development and digital solutions to help grow your business.
+            </p>
+            <div className="bg-white p-8 rounded-lg border-2 border-red-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Web & Digital Services</h3>
+              <p className="text-gray-700 mb-6">
+                Custom websites, landing pages, mobile applications, and web applications tailored to your business needs.
+              </p>
+              <p className="text-gray-600 mb-6">
+                Looking to establish or expand your digital presence? I can help you build professional online solutions that convert visitors into customers.
+              </p>
+              <a href="mailto:jeffrey@614restore.com" className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg">
+                Message for More Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-red-600 text-white py-16">
         <div className="container text-center">
