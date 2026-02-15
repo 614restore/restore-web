@@ -23,7 +23,7 @@ export default function Services() {
         "Same-day delivery available"
       ],
       icon: "🏠",
-      price: "Starting at $299"
+      price: "Starting at $395"
     },
     {
       title: "Professional Listing Media",
@@ -37,7 +37,7 @@ export default function Services() {
         "Quick turnaround (24-48 hours)"
       ],
       icon: "📷",
-      price: "Starting at $499"
+      price: "Starting at $595"
     },
     {
       title: "Property Evaluation Report",
@@ -51,7 +51,7 @@ export default function Services() {
         "Ready for distribution to all parties"
       ],
       icon: "📋",
-      price: "Starting at $399"
+      price: "Starting at $995"
     }
   ];
 
