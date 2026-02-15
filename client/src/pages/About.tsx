@@ -25,7 +25,7 @@ export default function About() {
     },
     {
       title: "Professional Photographer",
-      description: "Expert in 4K drone photography, thermal imaging, and professional media production"
+      description: "Expert in 4K drone photography and professional media production"
     }
   ];
 
@@ -202,10 +202,6 @@ export default function About() {
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" />
                   <span className="text-gray-700">Roof assessments</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600" />
-                  <span className="text-gray-700">Thermal imaging</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-600" />

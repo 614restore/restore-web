@@ -41,7 +41,7 @@ export default function Services() {
     },
     {
       title: "Property Evaluation Report",
-      description: "Perfect for real estate agents listing properties or homeowners selling independently. Provide buyers with a complete professional evaluation that demonstrates full transparency and builds confidence in your property.",
+      description: "Comprehensive property assessment with professional documentation suitable for real estate agents, buyers, and stakeholders.",
       features: [
         "Complete property analysis",
         "Professional written report",
@@ -189,15 +189,6 @@ export default function Services() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Thermal Imaging Note */}
-      <section className="bg-blue-50 border-l-4 border-blue-600 py-12">
-        <div className="container">
-          <p className="text-center text-gray-700 text-lg">
-            <span className="font-semibold text-blue-600">Thermal Imaging Available Upon Request:</span> For commercial properties and specialized inspections, thermal imaging services are available. <button onClick={() => setLocation('/contact')} className="text-blue-600 hover:text-blue-800 font-semibold underline">Send an inquiry</button> to discuss your specific needs.
-          </p>
         </div>
       </section>
 
