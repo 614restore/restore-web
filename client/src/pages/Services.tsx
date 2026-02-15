@@ -12,46 +12,46 @@ export default function Services() {
 
   const services = [
     {
-      title: "Roof & Exterior Inspections",
-      description: "Comprehensive aerial and ground inspections to identify roof, gutter, siding, and structural issues.",
+      title: "The Foundation Report",
+      description: "Inspection only with written analysis and key inspection photos. Perfect for sellers who want a professional assessment.",
       features: [
-        "Comprehensive roof condition assessment",
-        "Hail damage assessment",
-        "Gutter and downspout inspection",
-        "Claims-ready documentation",
-        "Detailed written report",
-        "Same-day delivery available"
-      ],
-      icon: "🏠",
-      price: "Starting at $395"
-    },
-    {
-      title: "Professional Listing Media",
-      description: "4K drone photography and videography to showcase properties in their best light.",
-      features: [
-        "4K drone photography",
-        "Professional video editing",
-        "360° property tours",
-        "Full usage rights included",
-        "Unlimited revisions",
-        "Quick turnaround (24-48 hours)"
-      ],
-      icon: "📷",
-      price: "Starting at $595"
-    },
-    {
-      title: "Property Evaluation Report",
-      description: "Comprehensive property assessment with professional documentation suitable for real estate agents, buyers, and stakeholders.",
-      features: [
-        "Complete property analysis",
-        "Professional written report",
-        "High-resolution documentation photos",
-        "Expert findings and recommendations",
-        "Digital & print formats",
-        "Ready for distribution to all parties"
+        "Roof & Exterior Integrity Audit",
+        "Seller's Transparency Report (PDF)",
+        "Realtor Speed-Dial Support",
+        "High-Resolution Inspection Photos",
+        "Email Delivery within 24 Hours",
+        "Deal-Killer Issues Identified"
       ],
       icon: "📋",
-      price: "Starting at $995"
+      price: "$395"
+    },
+    {
+      title: "The Custom Choice Suite",
+      description: "Inspection + Choose ANY 3 Media Assets from our menu. Perfect for agents who want inspection foundation plus marketing power.",
+      features: [
+        "Roof & Exterior Integrity Audit",
+        "Seller's Transparency Report (PDF)",
+        "Choose ANY 3 Media Assets",
+        "3D Dollhouse Walkthrough (Matterport)",
+        "Professional 2D Floor Plan",
+        "Aerial Drone Photography & More"
+      ],
+      icon: "📷",
+      price: "$595"
+    },
+    {
+      title: "The Gold Standard",
+      description: "Inspection + ALL Media + Cinematic Edit + Social Media Kit. The ultimate package for maximum market impact.",
+      features: [
+        "Roof & Exterior Integrity Audit",
+        "Seller's Transparency Report (PDF)",
+        "ALL Media Assets Included",
+        "Professional Cinematic Edit",
+        "Social Media Kit (Reels, Stories, Posts)",
+        "Branded Property Webpage"
+      ],
+      icon: "🏆",
+      price: "$995"
     }
   ];
 

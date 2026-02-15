@@ -24,23 +24,26 @@ export default function Home() {
 
   const services = [
     {
-      title: "Roof & Exterior Inspections",
-      description: "Comprehensive aerial and ground inspections to identify roof, gutter, siding, and structural issues.",
-      features: ["Comprehensive assessment", "Professional documentation", "Claims-ready reports"],
-      icon: "🏠"
+      title: "The Foundation Report",
+      price: "$395",
+      description: "Inspection only with written analysis and key inspection photos. Perfect for sellers who want a professional assessment.",
+      features: ["Roof & Exterior Integrity Audit", "Seller's Transparency Report", "Realtor Speed-Dial Support"],
+      icon: "📋"
     },
     {
-      title: "Professional Listing Media",
-      description: "Listings with professional drone footage receive 68% more inquiries. Full rights included.",
-      features: ["4K drone photography", "360° property tours", "Full usage rights included"],
+      title: "The Custom Choice Suite",
+      price: "$595",
+      description: "Inspection + Choose ANY 3 Media Assets. Perfect for agents who want inspection foundation plus marketing power.",
+      features: ["Complete Inspection", "Choose 3 Media Assets", "Professional Editing Included"],
       icon: "📷",
       popular: true
     },
     {
-      title: "Property Evaluation Report",
-      description: "Whether you're a real estate agent listing properties or a homeowner selling independently, provide buyers with a complete professional report showing full transparency and nothing to hide.",
-      features: ["Detailed property analysis", "Professional documentation", "Ready for distribution"],
-      icon: "📋"
+      title: "The Gold Standard",
+      price: "$995",
+      description: "Inspection + ALL Media + Cinematic Edit + Social Media Kit. The ultimate package for maximum market impact.",
+      features: ["Complete Inspection", "All Media Assets", "Social Media Kit Included"],
+      icon: "🏆"
     }
   ];
 
@@ -207,7 +210,8 @@ export default function Home() {
                   </div>
                 )}
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                {service.price && <p className="text-2xl font-bold text-red-600 mb-3">{service.price}</p>}
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <ul className="space-y-2 mb-8">
                   {service.features.map((feature, i) => (
